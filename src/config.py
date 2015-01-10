@@ -1,5 +1,5 @@
 #: The path to the opencv install's Haar cascade folder
-HCDIR = 'C:/opencv/sources/data/haarcascades/'
+HCDIR = '/usr/local/Cellar/opencv/2.4.9/share/OpenCV/haarcascades'
 
 #: The name of the eyepair Haar cascade file to use
 HC_EYEPAIR_NAME = 'haarcascade_mcs_eyepair_big.xml'
@@ -14,20 +14,20 @@ HC_RIGHTEYE_NAME = 'haarcascade_righteye_2splits.xml'
 HC_FACE_NAME = 'haarcascade_frontalface_alt2.xml'
 
 #: The final image height
-HEIGHT_TARGET = 720
+HEIGHT_TARGET = 640
 
 #: The final image width
-WIDTH_TARGET = 960
+WIDTH_TARGET = 640
 
 #: What is used when the image must be offset too far? 0 for black border, 1 for stretch colors
-GAP_BORDER = 1
+GAP_BORDER = 0
 
 
 
 # Debugging parameters
 
 #: If True, print debug info
-DEBUG = True
+DEBUG = False
 
 #: If true, will mark on the image the eyes/eyepairs which were selected to be used for calculations
 MARKUSED = False
@@ -39,7 +39,7 @@ MARKALL = False
 NOTRANSFORM = False
 
 #: If true, skip individual eye/eyepair detection, and go to face detection
-FORCE_FULL_FACE = True
+FORCE_FULL_FACE = False
 
 
 
@@ -65,10 +65,10 @@ FACE_HEIGHT_TO_EYE_MID = .4
 FACE_WIDTH_TO_EYE_WIDTH = .41
 
 #: The minimum size detection threshold for eyepair as a fraction of the image size
-EYEPAIR_MIN_SIZE = (.15, .03)
+EYEPAIR_MIN_SIZE = (.05, .03)
 
 #: The maximum size detection threshold for eyepair as a fraction of the image size
-EYEPAIR_MAX_SIZE = (.55, 1)
+EYEPAIR_MAX_SIZE = (.65, 1)
 
 
 
