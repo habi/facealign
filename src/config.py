@@ -14,14 +14,13 @@ HC_RIGHTEYE_NAME = 'haarcascade_righteye_2splits.xml'
 HC_FACE_NAME = 'haarcascade_frontalface_alt2.xml'
 
 #: The final image height
-HEIGHT_TARGET = 640
+HEIGHT_TARGET = 1088
 
 #: The final image width
-WIDTH_TARGET = 640
+WIDTH_TARGET = 816
 
 #: What is used when the image must be offset too far? 0 for black border, 1 for stretch colors
 GAP_BORDER = 0
-
 
 
 # Debugging parameters
@@ -40,7 +39,6 @@ NOTRANSFORM = False
 
 #: If true, skip individual eye/eyepair detection, and go to face detection
 FORCE_FULL_FACE = False
-
 
 
 # Face characteristics, may need to be tweaked per face
